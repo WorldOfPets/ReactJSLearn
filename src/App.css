@@ -8,30 +8,15 @@ ul li {
                       "mainblock game info";
   height: 100%;
 }
-.Grid * {
-  margin: 5px;
-  border-radius: 15px;
-}
-.Grid header {
-  grid-area: header;
-  height: 100px;
-  background-color: darkslateblue;
-  border-radius: 0;
-  position: fixed;
-  width: 100%;
-  margin: 0;
-  color: whitesmoke;
-}
 .Grid .main-block{
-  margin: 5px;
-  margin-top: 110px;
+  margin-top: 100px;
   grid-area: mainblock;
   background-color: aqua;
   min-height: 800px;
 }
 .Grid .components-block{
   grid-area: comp;
-  margin-top: 110px;
+  margin-top: 100px;
   background-color: blue;
   min-height: 400px;
 }
@@ -42,7 +27,7 @@ ul li {
 }
 .Grid .order-block{
   grid-area: order;
-  margin-top: 110px;
+  margin-top: 100px;
   background-color: chartreuse;
   min-height: 400px;
 }
@@ -52,7 +37,7 @@ ul li {
   min-height: 400px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   .Grid {
     grid-template-areas: "header header"
     "mainblock comp"
@@ -63,7 +48,7 @@ ul li {
     margin-top: 5px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .Grid {
     grid-template-areas: "header"
     "mainblock"

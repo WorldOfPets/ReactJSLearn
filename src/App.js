@@ -14,6 +14,7 @@ const App = () => {
         <GameBlock/>
         <OrderBlock/>
         <InfoBlock/>
+        <div className='header'></div>
       </div>
     );
 }
