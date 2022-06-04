@@ -1,7 +1,78 @@
 ul li {
   list-style-type: armenian;
 }
-.App {
+.Grid {
+  display: grid;
+  grid-template-areas: "header header header"
+                      "mainblock comp order"
+                      "mainblock game info";
+  height: 100%;
+}
+.Grid * {
+  margin: 5px;
+  border-radius: 15px;
+}
+.Grid header {
+  grid-area: header;
+  height: 100px;
   background-color: darkslateblue;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
   color: whitesmoke;
+}
+.Grid .main-block{
+  margin: 5px;
+  margin-top: 110px;
+  grid-area: mainblock;
+  background-color: aqua;
+  min-height: 800px;
+}
+.Grid .components-block{
+  grid-area: comp;
+  margin-top: 110px;
+  background-color: blue;
+  min-height: 400px;
+}
+.Grid .game-block{
+  grid-area: game;
+  background-color: brown;
+  min-height: 400px;
+}
+.Grid .order-block{
+  grid-area: order;
+  margin-top: 110px;
+  background-color: chartreuse;
+  min-height: 400px;
+}
+.Grid .info-block{
+  grid-area: info;
+  background-color: coral;
+  min-height: 400px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Grid {
+    grid-template-areas: "header header"
+    "mainblock comp"
+    "mainblock game"
+    "order info";
+  }
+  .Grid .order-block{
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .Grid {
+    grid-template-areas: "header"
+    "mainblock"
+    "comp"
+    "game"
+    "order"
+    "info";
+  }
+  .Grid .components-block{
+    margin-top: 5px;
+  }
 }
