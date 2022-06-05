@@ -1,0 +1,14 @@
+.header {
+    grid-area: header;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.logo{
+    height: 75px;
+}

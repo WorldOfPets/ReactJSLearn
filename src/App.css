@@ -1,12 +1,21 @@
-ul li {
-  list-style-type: armenian;
+@font-face {
+  font-family: Kanit;
+  src: url(./fonts/kanit.ttf);
+}
+:root{
+  --main-gray: #E3E3E3;
+  --text-gray: #626161;
+  --text-hover-violet: #4522CE;
+}
+body {
+  font-family: Kanit, Arial, Helvetica, sans-serif !important;
+  background-color: var(--main-gray);
 }
 .Grid {
   display: grid;
   grid-template-areas: "header header header"
                       "mainblock comp order"
                       "mainblock game info";
-  height: 100%;
 }
 .Grid .main-block{
   margin-top: 100px;
