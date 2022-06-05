@@ -11,3 +11,8 @@
     color: var(--text-hover-violet);
     transition-duration: 0.1s;
 }
+.Item:active {
+    text-shadow: 0.5px 0.5px 0px var(--text-gray);
+    transform: scale(1.05);
+    color: var(--text-hover-violet);
+}

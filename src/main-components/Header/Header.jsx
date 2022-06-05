@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className={s.header}>
             <HeaderItem title='About me'/>
-            <HeaderItem title='My contact'/>
+            <HeaderItem title='My components'/>
             <img className={s.logo} src={logo} alt={"logo"}/>
             <HeaderItem title='2048'/>
             <HeaderItem title='Make an order'/>

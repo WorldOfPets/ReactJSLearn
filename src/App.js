@@ -6,6 +6,9 @@ import InfoBlock from './main-components/InfoBlock';
 import MainBlock from './main-components/MainBlock';
 import MyComponents from './main-components/MyComponents';
 import OrderBlock from './main-components/OrderBlock';
+//<Route path='/mycomponents' component={MyComponents}/>
+//href="/mycomponents"
+//<NavLink to='/mycomponents' activeClassName{}>My componets</NavLink>
 const App = () => {
     return (
       <BrowserRouter>
